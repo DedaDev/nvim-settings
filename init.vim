@@ -21,8 +21,6 @@ Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'doums/darcula'
 Plug 'glepnir/dashboard-nvim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
@@ -34,11 +32,12 @@ set encoding=UTF-8
 
 call plug#end()
 
+:lua require('lua/telescope-settings')
+
 nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-p> :Files<CR>
-
-nnoremap <C-e> :History<CR>
+nnoremap <C-p> :Telescope find_files<CR>
+nnoremap <C-e> :Telescope oldfiles<CR>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep find_command=rg<cr>
