@@ -16,7 +16,6 @@ Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'doums/darcula'
@@ -27,12 +26,22 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'BurntSushi/ripgrep'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
 
 set encoding=UTF-8
 
 call plug#end()
 
-:lua require('lua/telescope-settings')
+:lua require('telescope-settings')
+:lua require('lsp-settings')
+:lua require('cmp-settings')
 
 nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
@@ -44,13 +53,10 @@ nnoremap <leader>fg <cmd>Telescope live_grep find_command=rg<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-inoremap <silent><expr> <Tab> coc#pum#visible() ? coc#_select_confirm() : "\<Tab>"
-
 nmap <F8> :TagbarToggle<CR>
+nmap <C-c> <Esc>
 
 :set completeopt-=preview " For No Previews
 
 colorscheme darcula
-
-
-let g:coc_global_extensions = ['coc-pairs', 'coc-tsserver', 'coc-eslint', 'coc-json']
+highlight! Normal guibg=None
