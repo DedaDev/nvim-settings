@@ -53,4 +53,6 @@ require('lspconfig')['rust_analyzer'].setup{
     }
 }
 
-require('lspconfig')['eslint'].setup {}
+require('lspconfig')['eslint'].setup {
+    on_attach = on_attach
+}

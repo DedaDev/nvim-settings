@@ -1,8 +1,22 @@
 return require('packer').startup(function(use)
-	use 'doums/darcula' 
-	use 'preservim/nerdtree'
+  use 'wbthomason/packer.nvim' 
+
+  use 'tiagovla/tokyodark.nvim'
+  use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional, for file icons
+  },
+  tag = 'nightly' -- optional, updated every week. (see issue #1193)
+}
 	use 'ryanoasis/vim-devicons'
-	use 'vim-airline/vim-airline'
+  use {
+  'nvim-lualine/lualine.nvim',
+     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+	use 'pangloss/vim-javascript'
+	use 'leafgarland/typescript-vim'
 	
 	use 'neovim/nvim-lspconfig'
 	use 'hrsh7th/cmp-nvim-lsp'
@@ -16,5 +30,8 @@ return require('packer').startup(function(use)
 	use 'nvim-lua/plenary.nvim'
 	use { 'nvim-telescope/telescope.nvim', tag = '0.1.0',}
 	
-	use 'tc50cal/vim-terminal'
+	use 'akinsho/toggleterm.nvim'
+  use 'folke/trouble.nvim'
+
+  use 'tpope/vim-fugitive'
 end)

@@ -99,15 +99,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
-  darcula = {
+  ["lualine.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\darcula",
-    url = "https://github.com/doums/darcula"
-  },
-  nerdtree = {
-    loaded = true,
-    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nerdtree",
-    url = "https://github.com/preservim/nerdtree"
+    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -119,6 +114,21 @@ _G.packer_plugins = {
     path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["packer.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
@@ -129,20 +139,40 @@ _G.packer_plugins = {
     path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-airline"] = {
+  ["toggleterm.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-airline",
-    url = "https://github.com/vim-airline/vim-airline"
+    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["tokyodark.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyodark.nvim",
+    url = "https://github.com/tiagovla/tokyodark.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
+  },
+  ["typescript-vim"] = {
+    loaded = true,
+    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\typescript-vim",
+    url = "https://github.com/leafgarland/typescript-vim"
   },
   ["vim-devicons"] = {
     loaded = true,
     path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
   },
-  ["vim-terminal"] = {
+  ["vim-fugitive"] = {
     loaded = true,
-    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-terminal",
-    url = "https://github.com/tc50cal/vim-terminal"
+    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-javascript"] = {
+    loaded = true,
+    path = "C:\\Users\\PC\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-javascript",
+    url = "https://github.com/pangloss/vim-javascript"
   },
   ["vim-vsnip"] = {
     loaded = true,
