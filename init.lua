@@ -36,4 +36,8 @@ require"nvim-tree".setup {
   }
 }
 
+require"trouble".setup {
+  position = "right",
+}
+
 vim.lsp.set_log_level("debug")
