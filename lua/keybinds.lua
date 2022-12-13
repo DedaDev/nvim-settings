@@ -3,7 +3,8 @@ local function map(m, k, v)
 end
 
 
-map('n', '<C-f>', ':NvimTreeFindFile<CR>')
+map('n', '<C-h>', ':NvimTreeFindFile<CR>')
 map('n', '<C-e>', ':Telescope oldfiles<CR>')
-map('n', '<C-p>', ':Telescope live_grep<CR>')
+map('n', '<C-f>', ':Telescope live_grep<CR>')
+map('n', '<C-p>', ':Telescope find_files<CR>')
 map('n', '<C-Semicolon>', ':TroubleToggle<CR>')
